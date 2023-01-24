@@ -1,28 +1,27 @@
 import React from 'react';
 import './Header.css';
-import { Route, Switch, NavLink } from 'react-router-dom';
-import RGBDisplay from '../RGBDisplay/RGBDisplay.js';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <div className="header">
-      <nav>
-        <p>
-          <NavLink to="/">Color1</NavLink>
-        </p>
-        <p>
-          <NavLink to="/rgb/111/222/111">Color2</NavLink>
-        </p>
-        <p>
-          <NavLink to="/rgb/222/111/222">Color3</NavLink>
-        </p>
+    <div>
+      <nav className="header">
+        <div className="ash-grey">
+          <p>
+            <NavLink to="/rgb/178/188/170">Ash Grey</NavLink>
+          </p>
+        </div>
+        <div className="xanadu">
+          <p>
+            <NavLink to="/rgb/131/142/131">Xanadu</NavLink>
+          </p>
+        </div>
+        <div className="granite-grey">
+          <p>
+            <NavLink to="/rgb/108/96/97">Granite Grey</NavLink>
+          </p>
+        </div>
       </nav>
-      <>
-        <Switch>
-          <Route exact path="/" />
-          <Route exact path="/rgb/:redColor/:greenColor/:blueColor" component={RGBDisplay} />
-        </Switch>
-      </>
     </div>
   );
 }
