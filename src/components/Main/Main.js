@@ -1,6 +1,11 @@
 import React from 'react';
+import RGBDisplay from '../RGBDisplay/RGBDisplay.js';
 import './Main.css';
 
 export default function Main() {
-  return <div>Main</div>;
+  return (
+    <div>
+      <RGBDisplay />
+    </div>
+  );
 }
