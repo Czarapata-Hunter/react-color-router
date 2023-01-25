@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <div>
-      <nav className="header">
+    <div className="header">
+      <nav className="navigation">
         <div className="ash-grey">
           <p>
             <NavLink to="/rgb/178/188/170">Ash Grey</NavLink>

@@ -1,4 +1,8 @@
 .header {
+  background-color: grey;
+}
+
+.navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,4 +10,23 @@
   height: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+
+nav a.active {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+a.active.ash-grey {
+  color: rgb(178, 188, 170);
+  background-color: RGB(131, 142, 131);
 }
